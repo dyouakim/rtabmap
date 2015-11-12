@@ -83,6 +83,11 @@ public:
 			const std::map<int, Transform> & poses,
 			const std::multimap<int, Link> & constraints,
 			std::list<std::map<int, Transform> > * intermediateGraphes = 0);
+	virtual std::map<int, Transform> optimizeWithLandmarks(
+			int rootId,
+			const std::map<int, Transform> & poses,
+			const std::multimap<int, Link> & constraints,
+			std::list<std::map<int, Transform> > * intermediateGraphes = 0);
 	virtual std::map<int, Transform> optimizeBA(
 			int rootId,
 			const std::map<int, Transform> & poses,
@@ -169,6 +174,11 @@ public:
 			int rootId,
 			const std::map<int, Transform> & poses,
 			const std::multimap<int, Link> & edgeConstraints,
+			std::list<std::map<int, Transform> > * intermediateGraphes = 0);
+	virtual std::map<int, Transform> optimizeWithLandmarks(
+			int rootId,
+			const std::map<int, Transform> & poses,
+			const std::multimap<int, Link> & constraints,
 			std::list<std::map<int, Transform> > * intermediateGraphes = 0);
 };
 

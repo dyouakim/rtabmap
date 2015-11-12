@@ -46,7 +46,8 @@ public:
 		kUserClosure,
 		kVirtualClosure,
 		kNeighborMerged,
-		kUndef};
+		kUndef,
+		kLandmark};
 	Link();
 	Link(int from,
 			int to,
