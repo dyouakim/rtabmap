@@ -71,7 +71,7 @@ Link::Link(int from,
 	from_(from),
 	to_(to),
 	transform_(transform),
-	type_(type)
+	type_(rtabmap::Link::kLandmark)
 {
 	setVariance(rotVariance, transVariance);
 
